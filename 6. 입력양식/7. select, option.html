@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select, option</title>
+</head>
+
+<body>
+
+    <form action="#">
+
+        <select>
+            <optgroup label="Coffee">
+                <option label="Americano"></option>
+                <option label="Caffe Mocha"></option>
+                <option selected>Cappuccino</option>
+            </optgroup>
+
+            <optgroup label="Latte" disabled>
+                <option>Caffe Latte</option>
+                <option>Vanilla Latte</option>
+            </optgroup>
+        </select>
+
+        <br>
+        <br>
+        <br>
+
+        <input type="text" list="fruits">
+
+        <datalist id="fruits">
+            <option>Apple</option>
+            <option>Orange</option>
+            <option>Mango</option>
+            <option>Pineapple</option>
+        </datalist>
+
+    </form>
+
+</body>
+
+</html>

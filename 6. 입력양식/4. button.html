@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="/hello">
+
+        <input id="t-box" type="text"> <br>
+
+        <button type="button" onclick="show();">버튼1</button>
+        <button type="submit">버튼2</button>
+        <button type="reset">버튼3</button>
+
+    </form>
+
+    <script>
+        function show() {
+            const t = document.getElementById('t-box');
+            alert('버튼 클릭됨');
+        }
+    </script>
+
+</body>
+
+</html>

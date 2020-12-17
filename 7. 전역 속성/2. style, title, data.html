@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style, title, data</title>
+</head>
+
+<body>
+
+    <h1 title="진짜 맛있는걸까?" style="color: yellow; background: red; width: fit-content;">맛있는 식사</h1>
+
+<div id="myself" data-my-name="test" data-lucky-number="7"></div>
+
+<script>
+    const my = document.getElementById('myself');
+    console.log('태그에 저장한 이름: ', my.dataset.myName);
+    console.log('태그에 저장한 숫자: ', my.dataset.luckyNumber);
+</script>
+
+</body>
+
+</html>
