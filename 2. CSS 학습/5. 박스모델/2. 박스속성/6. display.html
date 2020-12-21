@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+
+    <style>
+        span {
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+
+        a {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+
+        input {
+            /* 기본이 inline-block */
+            width: 100px;
+            height: 20px;
+            margin: 50px 0;
+            padding: 20px 0;
+        }
+
+        input:nth-child(2) {
+            /* display: none; */
+            opacity: 0;
+            /*투명도*/
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background: gray;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <span></span>
+    <a href="#">네이버 링크</a>
+    <a href="#">google 링크</a>
+
+    <br>
+
+    <div>
+        <input type="text" value="1">
+        <input type="text" value="2">
+        <input type="text" value="3">
+        <input type="text" value="4">
+        <input type="text" value="5">
+    </div>
+
+    <button class="btn">click!!</button>
+    <div class="box"></div>
+
+    <script>
+        const box = document.querySelector('.box');
+        const btn = document.querySelector('.btn');
+
+        btn.addEventListener('click', function () {
+            box.classList.toggle('hide');
+        });
+    </script>
+
+</body>
+
+</html>
