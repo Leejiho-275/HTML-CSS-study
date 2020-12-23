@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float해제</title>
+
+    <style>
+        div[class^="container"] {
+            width: 500px;
+            padding: 20px;
+            border: 3px solid red;
+            /* overflow: hidden; */
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background: yellowgreen;
+            font-size: 50px;
+            float: left;
+        }
+
+        /* .clear-box {
+            clear: both;
+        } */
+
+        .clear-fix::after {
+            clear: both;
+            display: block;
+            content: "";
+        }
+        /* flat 해제 요소는 block속성을 가져야 함 */
+    </style>
+</head>
+
+<body>
+
+    <div class="container clear-fix">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <!-- <div class="clear-box"></div> -->
+    </div>
+    <div class="container2 clear-fix">
+        <div class="box">1</div>
+        <div class="box">2</div>
+    </div>
+    <div class="container3 clear-fix">
+        <div class="box">1</div>
+        <div class="box">2</div>
+    </div>
+</body>
+</html>
