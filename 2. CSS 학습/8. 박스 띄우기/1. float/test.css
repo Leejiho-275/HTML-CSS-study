@@ -1,0 +1,93 @@
+section {
+    width: 800px;
+    border: 3px double blue;
+    margin: 10px auto;
+}
+
+section h1 {
+    font-size: 40px;
+    background: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-family: "궁서체", sans-serif;
+}
+
+section h2 {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    background: #332f2e;
+    padding: 10px;
+}
+
+section h2 em {
+    color: yellow;
+}
+
+section .gallery {
+    background: #6c6b69;
+}
+
+section .gallery>li {
+    width: 180px;
+    height: 300px;
+    float: left;
+    margin: 5px;
+    padding: 3px;
+    border: 1px solid white;
+}
+
+section .gallery #tulip {
+    background: red;
+}
+
+section .gallery #jebi {
+    background: purple;
+}
+
+section .gallery #hobak {
+    background: orange;
+}
+
+section .gallery #sunflower {
+    background: yellow;
+}
+
+section .gallery li h3 {
+    height: 150px;
+    margin: 3px;
+    background-size: 200px 150px;
+    background-repeat: no-repeat;
+    border: 0.5px solid white;
+}
+
+section .gallery li#tulip h3 {
+    background-image: url("images/tulip.jpg");
+}
+
+section .gallery li#jebi h3 {
+    background-image: url("images/jebi.jpg");
+}
+
+section .gallery li#hobak h3 {
+    background-image: url("images/hobak.jpg");
+}
+
+section .gallery li#sunflower h3 {
+    background-image: url("images/sunflower.jpg");
+}
+
+section .gallery li p {
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 1.3;
+}
+
+.clear-fix::after {
+    clear: both;
+    display: block;
+    content: "";
+}
