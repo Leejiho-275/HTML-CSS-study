@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 4px dashed orange;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+
+        .relative {
+            position: relative;
+            left: 130px;
+            top: 20px;
+        }
+
+        .absolute {
+            position: absolute;
+            left: 70px;
+            top: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">1</div>
+    <div class="box absolute">2</div>
+    <div class="box">3</div>
+
+</body>
+
+</html>
