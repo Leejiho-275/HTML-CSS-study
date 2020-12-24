@@ -1,0 +1,148 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    padding: 0 15%;
+    background: gray;
+}
+
+#wrapper {
+    height: 100%;
+}
+
+#wrapper header {
+    background: orange;
+    text-align: center;
+}
+
+#wrapper header h1 {
+    color: white;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+#wrapper header h1 span {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: normal;
+    padding: 10px 0;
+}
+
+#wrapper header p.stit {
+    background: lightgray;
+    font-size: 1.4rem;
+    padding: 5px 0;
+}
+
+#wrapper #container .side-menu {
+    float: left;
+    width: 22%;
+    background: white;
+    height: 65vh;
+}
+
+#wrapper #container .side-menu .wrap .title {
+    background: red;
+    color: white;
+    font-size: 1.6rem;
+    padding: .5rem 1rem;
+    letter-spacing: .15rem;
+}
+
+#wrapper #container .side-menu .wrap ul li a {
+    color: #000;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    padding: 2rem 1rem;
+}
+
+#wrapper #container .content {
+    box-sizing: border-box;
+    float: left;
+    width: 56%;
+    padding: .7rem;
+    background: lightgray;
+    height: 65vh;
+}
+
+#wrapper #container .content article h2 {
+    background: darkblue;
+    padding: .5rem;
+}
+
+#wrapper #container .content article h2 a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: white;
+}
+
+#wrapper #container .content article .artist, p {
+    padding: 1rem .3rem;
+    font-size: 1.2rem;
+    color: darkblue;
+    letter-spacing: .05rem;
+}
+
+#wrapper #container .content article .artist {
+    font-weight: bold;
+}
+
+#wrapper #container .side-links {
+    float: right;
+    width: 22%;
+    background: white;
+    height: 65vh;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#wrapper #container .side-links .all {
+    display: block;
+    color: lightgray;
+    padding: .5rem;
+}
+
+#wrapper #container .side-links .love {
+    display: block;
+    color: orange;
+    padding: .5rem;
+}
+
+#wrapper #container .side-links span {
+    display: block;
+    color: #000;
+    padding: .5rem;
+}
+
+#wrapper #container .side-links .links {
+    display: block;
+    padding-top: 2rem;
+}
+
+#wrapper #container .side-links .links li a {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-left: 0.5rem;
+}
+
+#wrapper #container .side-links .links span {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
+}
+
+#wrapper footer {
+    clear: both;
+    box-sizing: border-box;
+    background: darkblue;
+    height: 5vh;
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+}
+
+#wrapper footer address a {
+    color: white;
+}

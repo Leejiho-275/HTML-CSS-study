@@ -1,32 +1,43 @@
 body {
     background: gray;
-    font-size: 10px;
-    box-sizing: border-box;
     padding: 0 10%;
+}
+
+#wrapper {
+    position: relative;
+    display: block;
 }
 
 #wrapper header {
     margin: 0 auto;
-    height: 100px;
+    height: 120px;
     background: orange;
     text-align: center;
-    position: relative;
 }
 
 #wrapper header h1 {
     color: #fff;
-    font-size: 45px;
+    font-size: 55px;
     font-weight: bold;
-    padding-top: 10px;
 }
 
 #wrapper header h1 span {
+    display: inline-block;
     font-size: 16px;
+    padding-bottom: 10px;
 }
 
-#wrapper .stit {
+#wrapper header .stit {
+    display: block;
     background: lightgray;
+    font-size: 14px;
     padding: 5px;
+}
+
+#container {
+    display: block;
+    top: 10%;
+    float: left;
 }
 
 #container .side-menu .wrap .title {
@@ -34,5 +45,4 @@ body {
     background: red;
     color: white;
     font-size: 20px;
-    position: relative;
 }
