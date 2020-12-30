@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>name, duration</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+
+        @keyframes grow-up {
+            0% {
+                width: 100px;
+            }
+
+            75% {
+                width: 500px;
+            }
+
+            100% {
+                width: 300px;
+            }
+        }
+
+        .box:hover {
+            /* animation-name: grow-up;
+            animation-duration: 3s; */
+            animation: grow-up 3s linear .2s infinite alternate;
+            /* animation-timing-function: linear; */
+            /* animation-delay: .5s; */
+            /* animation-iteration-count: infinite; */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+
+</html>
