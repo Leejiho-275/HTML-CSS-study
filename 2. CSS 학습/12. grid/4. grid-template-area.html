@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-template-area</title>
+
+    <style>
+        .wrap {
+            margin: 100px;
+            width: 600px;
+            display: grid;
+
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(3, 1fr);
+
+            grid-template-areas:
+                "header header header"
+                "main main side"
+                ". footer footer"
+            ;
+
+            /* row-gap: 20px;
+            column-gap: 15px; */
+            gap: 20px 15px;
+        }
+
+        .wrap>* {
+            border: 5px solid red;
+        }
+
+        .wrap header {
+            grid-area: header;
+        }
+
+        .wrap section.main {
+            grid-area: main;
+        }
+
+        .wrap aside {
+            grid-area: side;
+        }
+
+        .wrap footer {
+            grid-area: footer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrap">
+
+        <header>Header</header>
+
+        <section class="main">
+            main
+        </section>
+
+        <aside>Aside</aside>
+
+        <footer>footer</footer>
+
+    </div>
+
+</body>
+
+</html>
